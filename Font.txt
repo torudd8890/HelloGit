@@ -3,4 +3,4 @@
          ▼を展開し、Item0にフォント名を指定する。
          以下で指定しなければいけない名前はPostScript名のため、FontBookで名称を確認して入力する*/
 
-        resultLabel.font = UIFont(name:"LetsgoDigital-Regular",size:50)
+        resultLabel.font = UIFont(name:"[フォント名]",size:50)

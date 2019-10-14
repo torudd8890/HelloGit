@@ -1,0 +1,19 @@
+import Foundation
+import AVFoundation  //AVFoundation フレームワークのインポート
+
+class SEManager: NSObject {
+    //音を制御するための変数
+    var player:AVAudioPlayer!
+    //音を再生する為の　sePlay メソッド
+    func sePlay(soundName: String){
+        let path = Bundle.main.bundleURL.appendingPathComponent(soundName)
+        do {
+            try player = AVAudioPlayer(contentsOf: path)
+            player.prepareToPlay()
+            player.play()
+        }
+        catch {
+            print("エラーです")
+        }
+    }
+}
