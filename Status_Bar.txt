@@ -1,0 +1,25 @@
+    // **** ステータスバーの変更方法 ****
+
+    /* 1.全画面時の変更方法
+     「Target」→「Info」→「Custom iOS Target Properties」で「＋」を押し、
+     「View controller-based status bar appearance」を新たに追加する。
+	 「Value」を「NO」にする。*/
+
+    /* 2.スプラッシュ（起動時）画面の変更方法
+     「Target」→「General」→「Deployment Info」→「status by style」 を
+     「light Content」 にすることでバーの色を白にできる。*/
+
+    /* 3.Viewごとの変更方法　*/
+    // 色の変更
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        // ステータスバーの文字色に白を指定
+        return UIStatusBarStyle.lightContent
+        /* 横画面時の場合は以下を記載
+         override var prefersStatusBarHidden: Bool { return false }
+         */
+    }
+    // ステータスバーを隠す
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
