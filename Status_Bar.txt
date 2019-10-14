@@ -1,6 +1,6 @@
     // **** ステータスバーの変更方法 ****
 
-    /* 1.全画面時の変更方法
+    /* 1.全画面の変更方法
      「Target」→「Info」→「Custom iOS Target Properties」で「＋」を押し、
      「View controller-based status bar appearance」を新たに追加する。
 	 「Value」を「NO」にする。*/
