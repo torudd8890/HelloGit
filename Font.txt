@@ -1,0 +1,6 @@
+        /* **** fontの追加・変更 ****
+         fontフォルダをプロジェクトに取り込み、「Info」で「Fonts provided By Application」を追加。
+         ▼を展開し、Item0にフォント名を指定する。
+         以下で指定しなければいけない名前はPostScript名のため、FontBookで名称を確認して入力する*/
+
+        resultLabel.font = UIFont(name:"LetsgoDigital-Regular",size:50)

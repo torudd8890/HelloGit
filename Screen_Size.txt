@@ -1,0 +1,5 @@
+        /* デバイスのスクリーンサイズを調べて、定数に格納する　*/
+
+        let screenWidth:Double = Double(UIScreen.main.bounds.size.width)
+        let screenHeight:Double = Double(UIScreen.main.bounds.size.height)
+        print("横幅\(screenWidth) 縦幅は\(screenHeight)")
